@@ -1,20 +1,14 @@
-const path = require('path')
 const DefinePlugin = require('webpack/lib/DefinePlugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const ProvidePlugin = require('webpack/lib/ProvidePlugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const {src, dist} = require('./helpers')
 
-
-function src(...pathSegs) {
-  return path.resolve(__dirname, '../src', ...pathSegs)
-}
-
-function dist(...pathSegs) {
-  return path.resolve(__dirname, '../dist', ...pathSegs)
-}
 
 module.exports = {
-  entry: src('main.ts'),
+  entry: {
+    main: src('main.ts'),
+  },
   output: {
     path: dist(),
     filename: '[name].js',
@@ -54,8 +48,13 @@ module.exports = {
         to: dist('assets'),
       },
       {
-        from: src('../node_modules/bootstrap/dist/css/bootstrap.css'),
-        to: src('css/bootstrap.css'),
+        from: src('../node_modules/bootstrap/dist/css/bootstrap.min.css'),
+        to: src('css/bootstrap.min.css'),
+      },
+      {
+        from: src((process.env.NODE_ENV === 'production')? 
+          'index.prod.html' : 'index.html'),
+        to: dist('index.html'),
       },
       {
         from: src('css'),

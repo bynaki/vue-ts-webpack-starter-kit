@@ -24,6 +24,7 @@
     "@types/bootstrap": "^3.3.33",
     "@types/jquery": "^2.0.41",
     "@types/node": "^7.0.13",
+    "compression-webpack-plugin": "^0.4.0",
     "copy-webpack-plugin": "^4.0.1",
     "cross-env": "^4.0.0",
     "css-loader": "^0.28.0",
