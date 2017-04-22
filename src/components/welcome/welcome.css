@@ -1,0 +1,17 @@
+.welcome h1, h2 {
+  font-weight: normal;
+}
+
+.welcome ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.welcome li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.welcome a {
+  color: #42b983;
+}
