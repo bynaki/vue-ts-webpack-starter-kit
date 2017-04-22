@@ -48,18 +48,18 @@ module.exports = {
         to: dist('assets'),
       },
       {
+        from: src('css'),
+        to: dist('css'),
+        ignore: ['main.css'],
+      },
+      {
         from: src('../node_modules/bootstrap/dist/css/bootstrap.min.css'),
-        to: src('css/bootstrap.min.css'),
+        to: dist('css/bootstrap.min.css'),
       },
       {
         from: src((process.env.NODE_ENV === 'production')? 
           'index.prod.html' : 'index.html'),
         to: dist('index.html'),
-      },
-      {
-        from: src('css'),
-        to: dist('css'),
-        ignore: ['main.css'],
       },
     ]),
     new ExtractTextPlugin('css/[name].css'),

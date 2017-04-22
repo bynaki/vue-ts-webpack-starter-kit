@@ -1,7 +1,7 @@
 {
   "name": "vue-ts-webpack-starter-kit",
   "description": "vue + typescript using webpack starter kit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": {
     "name": "bynaki",
     "email": "bynaki@icloud.com"

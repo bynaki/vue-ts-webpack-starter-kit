@@ -19,7 +19,7 @@ export class WelcomeComponent extends Vue {
 
   mounted() {
     this.log.info('mounted')
-    this.msg = 'Welcome to Your Vue.js App!!'
+    this.msg = 'Welcome to Your Vue.js App'
   }
 }
 export default WelcomeComponent

@@ -1,4 +1,4 @@
-# Vue + Typescript by Webpack Starter Kit
+# Vue + Typescript Using Webpack Starter Kit
 
 
 ## Usage
