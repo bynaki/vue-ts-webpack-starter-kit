@@ -1,4 +1,9 @@
+/**
+ * helpers
+ */
+
 const path = require('path')
+
 
 function src(...pathSegs) {
   return path.resolve(__dirname, '../src', ...pathSegs)

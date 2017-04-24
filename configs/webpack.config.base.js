@@ -1,3 +1,7 @@
+/**
+ * webpack.config.base
+ */
+
 const DefinePlugin = require('webpack/lib/DefinePlugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const ProvidePlugin = require('webpack/lib/ProvidePlugin')

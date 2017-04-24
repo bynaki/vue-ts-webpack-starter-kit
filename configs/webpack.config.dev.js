@@ -1,5 +1,10 @@
-const webpackConfig = require("./webpack.config.base")
+/**
+ * webpack.comfig.dev
+ */
+
+const webpackConfig = require('./webpack.config.base')
 const WebpackBrowserPlugin = require('webpack-browser-plugin')
+
 
 webpackConfig.devServer = {
   port: 8080,
@@ -13,4 +18,4 @@ webpackConfig.plugins.push(new WebpackBrowserPlugin({
   browser: 'Chrome',
 }))
 
-module.exports = webpackConfig;
+module.exports = webpackConfig
